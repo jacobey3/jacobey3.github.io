@@ -1,0 +1,318 @@
+/* General */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    background: white;
+}
+
+/* Navbar */
+#navbar-container {
+	position: fixed;
+	display: inline-block;
+	/*background: #3C869E;*/
+	background: white;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+}
+
+#navbar ul {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	top: calc(50% - 9.5px);
+	left: calc(50% - 185.75px);
+}
+
+#navbar li {
+	display: inline-block;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+#navbar li:hover {
+	opacity: 0.6;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/** Center slide */
+#center-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 700px;
+}
+
+#center-image {
+	position: absolute;
+	background-image: url('UCBerkeleyCampus.jpg');
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+
+#center-image-overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+
+#center-caption { /* Change this font */
+	position: absolute;
+	text-align: center;
+    width: 600px;
+    height: 150px;
+    top: calc(50% - 75px);
+	left: calc(50% - 300px);
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    z-index: 15;
+}
+
+/*#scrolldown-container {
+	position: absolute;
+	bottom: 10%;
+	left: calc(50% - 20px);
+	width: 40px;
+	height: 25px;
+	z-index: 15;
+}
+
+#scrolldown {
+	background: url('down-arrow.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#scrolldown-container:hover {
+	cursor: pointer;
+	bottom: 9%;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}*/
+
+/* Main text */
+#main-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 800px;
+	z-index: 50;
+}
+
+#main-text-header {
+	position: absolute;
+	text-align: center;
+	width: 800px;
+	height: 70px;
+	left: 50%;
+	margin: 10 0 0 -400;
+	font-size: 30px;
+	font-family: 'Bad Script', cursive;
+	font-weight: bold;
+}
+
+#main-divider {
+	position: absolute;
+	left: 25%;
+	top: 8%;
+}
+
+#main-items {
+	position: absolute;
+	width: 700px;
+	height: 740px;
+	left: 50%;
+	margin: 90 0 0 -350;
+}
+
+#me1 img {
+	position: absolute;
+	left: 5%;
+	width: 150px;
+	height: 240px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#me2 img {
+	position: absolute;
+	right: 31%;
+	top: 5%;
+	width: 256px;
+	height: 144px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*#me3 img {
+	position: absolute;
+	width: 187.5px;
+	height: 300px;
+	border-style: solid;
+	border-width: 1px;
+}*/
+
+#me4 img {
+	position: absolute;
+	width: 135.5px;
+	height: 240px;
+	right: 5%;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#main-text {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	left: 50%;
+	margin: 370 0 0 -350;
+}
+
+/** Scrolltop */
+#scrolltop-container {
+	position: absolute;
+	width: 40px;
+	height: 25px;
+	right: 5%;
+	bottom: 10%;
+}
+
+#scrolltop {
+	background: url('up-arrow.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#scrolltop-container:hover {
+	cursor: pointer;
+	bottom: 11%;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+/* Footer */
+#footer-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 0;
+	/*background-color: #3C869E;*/
+	background-color: black;
+}
+
+#name-motto-container {
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    height: 125px;
+    top: 17%;
+    left: 50%;
+    margin: 0 0 0 -225px;
+    z-index: 15;
+}
+
+#motto {
+    color: white;
+    font-size: 26px;
+    font-family: 'Bad Script', cursive;
+}
+
+#icon-section {
+	position: absolute;
+	height: 32;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin: 0 0 0 -250px;
+	z-index: 15;
+}
+
+#icon-section li {
+	display: inline-block;
+}
+
+#icon-section ul {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.icon-container {
+	width: 32px;
+	height: 32px;
+}
+
+#email {
+	background-image: url("email.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#linkedin {
+	background-image: url("linkedin.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#github {
+	background-image: url("github.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#facebook {
+	background-image: url("facebook.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#instagram {
+	background-image: url("instagram.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-container:hover {
+	opacity: 0.4;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/** JQuery manipulation */
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
